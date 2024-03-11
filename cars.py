@@ -61,3 +61,12 @@ print(places)
 places.sort(reverse=True)
 print(places)
 print(f'There are {len(places)} here.')
+
+print("\n *******************if*******************************")
+cars = ['audi', 'bmw', 'subaru', 'toyota']
+
+for car in cars:
+    if car.lower() == 'bmw': #在Python中检查是否相等时区分大小写
+        print(car.upper())
+    else:
+        print(car.title())
