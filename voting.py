@@ -69,7 +69,7 @@ for requested_topping in requested_toppings:
 print("\nFinished making your pizza!")
 
 
-print("\n*********************ex5-8*************************")
+print("\n*********************ex5-8/9*************************")
 '''
 users = [
         'zhangsan',
@@ -92,3 +92,50 @@ if users:
      ### E-F}}}
 else:
 	print("We need to find some users!")
+
+print("\n*********************ex5-10*************************")
+current_users = [
+                'zhangSan',
+                'lisi',
+                'wangermazi',
+                'admin',
+                'johen'
+                ]
+
+new_users = [
+            'zhangsan',
+            'Lili',
+            'Wangermazi',
+            'tifini',
+            'aWang'
+            ]
+
+current_users_lower=[]
+for current_user in current_users:
+    current_users_lower.append(current_user.lower())
+## print(current_users_lower)
+
+for new_user in new_users:
+    if new_user.lower() in current_users_lower:
+        print(f'The name {new_user} is used, change another one.')
+    else:
+        print(f'The name {new_user} is unused.')
+
+
+print("\n*********************ex5-11*************************")
+for n in range(1,10): ### {{{
+    if n==1:
+        print(f'1st')
+    elif n==2:
+        print(f'2nd')
+    elif n==3:
+        print(f'3rd')
+    else:
+        print(f"{n}th")
+### }}}
+
+
+print("\n*********************ex5-10*************************")
+    
+
+
